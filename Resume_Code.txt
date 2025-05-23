@@ -1,0 +1,175 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+%\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt} }
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\ 
+      \textit{\small#3} & \textit{\small #4} \\ 
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\ 
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\ 
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Shivansh Singh} \\ \vspace{1pt}
+    \small +60 162650096 $|$ +91 9454960857 $|$ \href{mailto:ShivanshSingh1008@gmail.com}{ShivanshSingh1008@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/shivanshsingh-1008/}{LinkedIn}
+\end{center}
+
+%-----------PROFILE-----------
+\section{Profile}
+\begin{itemize}[leftmargin=0.15in, label={}]
+
+\item 
+Data Engineer with 5+ years of experience designing and building scalable data pipelines, ETL workflows, and data warehouse solutions. Skilled in \textbf{Python, SQL, Spark, Hadoop, Hive, ODI} with a strong focus on data quality, reliability, and performance. Adept at transforming raw data into meaningful insights to support analytics and decision-making.
+
+\end{itemize}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{:\hspace{0.06cm}  Python, SQL} \\
+     \textbf{Big Data Technologies}{:\hspace{0.49cm}     Spark, PySpark, Spark SQL, YARN, Hadoop, Hive, Impala, HDFS} \\
+     \textbf{Data Engineering Tools}{:\hspace{0.28cm} ODI(Oracle Data Integrator), Data Modelling, ETL/ELT data Pipeline} \\
+     \textbf{Cloud computing}{:\hspace{1.38cm} Azure ,ADF(Azure data Factory), Databricks, ADLS, Bigquery} \\
+     \textbf{Orchestration}{:\hspace{2.02cm} Zena} \\
+     \textbf{Certification}{:\hspace{2.20cm} Microsoft certified Azure Data Engineer associate} \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Maybank}{June 2024 - Present}
+      {Senior Data Engineer}{Kuala Lumpur, Malaysia}
+      \resumeItemListStart
+         \resumeItem{Designed, built and maintained end-to-end ETL pipeline in Pyspark on Hadoop ecosystem (HDFS,hive) an ingesting 1M+ record/day into the International data warehouse(IDW) for Basel-3 reform.}
+	\resumeItem{Developed ETL pipelines to ingest raw CSV data, apply transformations using \textbf{PySpark}, and store the output in optimized \textbf{Parquet} format for efficient querying and downstream processing.}
+         \resumeItem {Implemented Spark optimization techniques such as \textbf{caching, multithreading, and broadcast} joins, resulting in a 20\% decrease in processing time for handling a daily load of around \textbf{2 Million records}.}
+	\resumeItem{Conducted in-depth data analysis using \textbf{Hive}, \textbf{Impala}, and \textbf{Spark SQL}, providing SIT/UAT fixes and ensuring smooth operations in the production environment.}
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Vodafone}{June 2022 – May 2024}
+      {Data Engineer}{Pune, India}
+      \resumeItemListStart
+	\resumeItem{Built modular \textbf{ADF} pipelines for data ingestion and scheduling, then used \textbf{Databricks} notebooks to perform complex data cleansing and enrichment, improving maintainability and accelerating downstream reporting.}
+	\resumeItem{Migrated legacy ETL processes from Oracle Data Integrator \textbf{(ODI)} to PySpark, improving maintainability and
+reducing processing time by 40\%.} 
+        \resumeItem{Leveraged \textbf{Spark performance tuning} to achieve a 20\% reduction in ETL job runtime on high‑volume production pipeline.}  
+        \resumeItem{Worked on data ingestion pipeline to ingest flat files in the \textbf{Data Lake}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tata Consultancy Services}{July 2019 - June 2022}
+      {ETL Developer}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Implemented the ETL process using \textbf{Oracle Data Integrator (ODI)}, configuring repositories, creating ODI models, and designing projects with interfaces, packages, procedures, variables, and knowledge modules for data processing on \textbf{Hadoop} and \textbf{HDFS}.}
+        \resumeItem{Streamlined and simplified a complex ODI-based pipeline by removing redundant steps, eliminating hard coded components, and optimizing performance for downstream \textbf{Hive} queries—resulting in a more efficient and maintainable process.}
+        \resumeItem{Collaborated with stakeholders to define and document user requirements, subsequently designing and executing unit test cases and test scripts.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rajiv Gandhi Proudyogiki Vishwavidyalaya}{Bhopal, India}
+      {Bachelor of Engineering in Electronics and Communication}{July 2015 - June 2019} 
+  \resumeSubHeadingListEnd
+
+\end{document}
